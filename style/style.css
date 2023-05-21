@@ -253,17 +253,10 @@ body {
     display: block;
     position: absolute;
     animation: clock 2s infinite;
-    /* animation универсальное свйоство которое принимает несколько свйоств */
-    /* значение: имя_анимации продолжительность_анимации количесвто_повторений-анимации*/
 }
 
-/* чтобы анимации сработало нужны правило keyframe */
 @keyframes clock {
-
-    /* @keyframes имя_анимации {.. */
-    /* внутри правило @keyframes нужно указать количество кадров */
     0% {
-        /* 0% - на нулевом кадре (когда наша анимация отработает только ноль процентов) */
         transform: scale(1);
     }
 
@@ -331,18 +324,6 @@ body {
     cursor: pointer;
     outline: none;
 }
-
-/* @keyframes opacity {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
 
 @media (max-width: 576px) {
     .tabsPanel {
